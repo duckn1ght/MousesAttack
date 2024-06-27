@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MousesAttack!1 | Главное меню</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Мыши<span> Атакуют</span>!</h1>
+      <div class="button-div">
+        <button id="start">Начать</button>
+        <button>Настроечки</button>
+      </div>
+    </main>
+  </body>
+  <script>
+    document.getElementById("start").onclick = () => {
+      window.location = "/game.html";
+    };
+  </script>
+</html>

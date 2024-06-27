@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #ffffeb;
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  transition: all 0.2s;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+main {
+  /* margin: 0 15%; */
+  height: 100vh;
+}
+
+#interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#arrow {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slidein {
+  to {
+    margin-left: 92%;
+  }
+
+  from {
+    margin-left: 0%;
+  }
+}
