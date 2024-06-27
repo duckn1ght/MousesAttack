@@ -13,5 +13,5 @@ main.onclick = () => {
   }
 };
 document.getElementById("home").onclick = () => {
-  window.location = "/index.html";
+  window.location = "index.html";
 };

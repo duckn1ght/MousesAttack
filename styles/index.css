@@ -7,7 +7,7 @@
 }
 body {
   background-color: #ffffeb;
-  background-image: url("/assets/mouse_cover.jpeg");
+  background-image: url("../assets/mouse_cover.jpeg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -19,7 +19,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 0; 
+  padding: 100px 0;
 }
 .button-div {
   display: flex;
