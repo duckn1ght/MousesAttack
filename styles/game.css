@@ -13,7 +13,7 @@ body {
   height: 100vh;
 }
 
-button {
+#home {
   border: none;
   background-color: transparent;
   transition: all 0.2s;
@@ -22,7 +22,7 @@ button {
   top: 10px;
 }
 
-button:hover {
+#home:hover {
   transform: scale(1.2);
   cursor: pointer;
 }
@@ -52,4 +52,50 @@ main {
   from {
     margin-left: 0%;
   }
+}
+
+#result-text {
+  text-align: center;
+}
+
+#modal {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000062;
+}
+#modal-inner {
+  background-color: #ffffeb;
+  height: 75vh;
+  width: 75vw;
+  border-radius: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#dead-again,
+#dead-home {
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 3px 10px;
+  transition: all 0.2s;
+}
+
+#dead-again:hover,
+#dead-home:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: black;
+  border-width: 2px;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: #ffffeb;
 }

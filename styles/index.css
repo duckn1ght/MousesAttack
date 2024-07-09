@@ -7,19 +7,17 @@
 }
 body {
   background-color: #ffffeb;
-  background-image: url("../assets/mouse_cover.jpeg");
-  background-repeat: no-repeat;
-  background-position: center;
+}
+h1 {
+  font-size: 3em;
 }
 main {
-  margin: 0 25%;
-  height: 100vh;
+  height: 100dvh;
   text-align: center;
   flex-direction: column;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 100px 0;
+  justify-content: space-around;
 }
 .button-div {
   display: flex;
@@ -27,12 +25,12 @@ main {
   gap: 15px;
 }
 button {
-  font-size: 18px;
+  font-size: 28px;
   border-radius: 10px;
   border: none;
   color: white;
   background-color: black;
-  padding: 2px 10px;
+  padding: 5px 10px;
   transition: all 0.2s;
 }
 button:hover {
@@ -40,9 +38,15 @@ button:hover {
   cursor: pointer;
   color: black;
   border-width: 2px;
+  font-weight: bold;
   border-radius: 50px;
   background-color: #ffffeb;
 }
 span {
   color: #fd85a9;
+}
+img {
+  height: 500px;
+  width: 100vw;
+  max-width: 500px;
 }

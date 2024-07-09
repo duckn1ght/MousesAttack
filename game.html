@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="styles/game.css" />
   </head>
   <body>
+    <div id="modal">
+      <div id="modal-inner">
+        <h2>Праебали(</h2>
+        <br />
+        <button id="dead-again">Попробовать еще раз</button>
+        <br />
+        <button id="dead-home">Уйти с позором</button>
+      </div>
+    </div>
     <button id="home">
-      <img src="/assets/home.png" alt="home" width="40px" />
+      <img src="./assets/home.png" alt="home" width="40px" />
     </button>
     <main>
       <div id="interface">
-        <div id="score">Очки: 500</div>
+        <div id="score">Тест:</div>
+        <div id="health"></div>
         <div id="arrow-line-div">
           <div id="arrow">
             <img src="./assets/arrow.png" alt="arrow" width="25px" />
@@ -25,12 +35,13 @@
               height="20px"
             />
           </div>
+          <p id="result-text"></p>
         </div>
       </div>
-      <div id="characters">
+      <!-- <div id="characters">
         <div id="mouses">MOUSES</div>
         <div id="human">HUMAN</div>
-      </div>
+      </div> -->
     </main>
   </body>
   <script src="scripts/game.js"></script>

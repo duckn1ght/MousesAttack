@@ -9,15 +9,17 @@
   <body>
     <main>
       <h1>Мыши<span> Атакуют</span>!</h1>
+
+      <img src="./assets/mouse_cover.jpeg" alt="mouse" />
+
       <div class="button-div">
-        <button id="start">Начать</button>
-        <button>Настроечки</button>
+        <button id="start" onclick="">Начать</button>
+        <!-- <button>Настроечки</button> -->
       </div>
     </main>
   </body>
   <script>
-    document.getElementById("start").onclick = () => {
-      window.location = "game.html";
-    };
+    document.getElementById("start").onclick = () =>
+      (window.location = "game.html");
   </script>
 </html>
