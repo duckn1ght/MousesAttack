@@ -7,6 +7,11 @@ const modal = document.getElementById("modal");
 const deadButton = document.getElementById("dead-again");
 const homeButton = document.getElementById("home");
 const totalScore = document.getElementById("total-score");
+const bestScore = document.getElementById("best-score");
+
+if (!localStorage["bestScore"]) {
+  localStorage["bestScore"] = 0;
+}
 
 let health = 3;
 let score = 0;
@@ -27,6 +32,12 @@ main.onclick = () => {
       modal.style.display = "flex";
       homeButton.style.display = "none";
       totalScore.innerHTML = `Ваш счет: ${score}`;
+      if (score > localStorage["bestScore"]) {
+        localStorage["bestScore"] = score;
+        bestScore.innerHTML = `Ваш рекорд: ${score}`;
+      } else {
+        bestScore.innerHTML = `Ваш рекорд: ${localStorage["bestScore"]}`;
+      }
     }
     healthText.textContent = `💖Жизни: ${health}/3`;
   } else if (position < 100 || position > 175) {
