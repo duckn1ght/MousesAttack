@@ -21,7 +21,7 @@ async function run() {
   await wait(1000);
   image.src = "./assets/start_scene/8.png";
   await wait(1000);
-  window.location = "/game.html";
+  window.location.href = "/game.html";
 }
 
 run();
